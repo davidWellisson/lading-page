@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+body {
+  margin: 0;
+  color: #fff;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 12px;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  background-color: orangered;
+  min-height: 20vh;
+  margin: 0 auto;
+}
+
+.cabeçalho h1 {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+section.abertura {
+  display: flex;
+  height: 100vh;
+  background-color: #be1e1c;
+  margin: 0 auto;
+}
+
+.assunto {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.texto {
+  flex: 1;
+  padding: 20px;
+}
+
+.texto h1 {
+  text-align: center;
+  padding: 100px 0px 3px;
+  font-size: 5rem;
+  line-height: 1.5;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+
+.texto p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0px 3px;
+  bottom: 50;
+}
+
+.img {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+}
+.img img {
+  width: 200%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.parte1 {
+  background-color: #ff6333;
+  margin: 0 auto;
+  padding: 80px 80px;
+}
+.parte1 h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 130px; /* Espaçamento entre as células da grid (ajuste conforme necessário) */
+  padding: 20px;
+}
+
+.descricao,
+.produtos,
+.problemas,
+.beneficios,
+.detalhamento,
+.problemasfreq {
+  border: px solid #ccc; /* Adicione uma borda para melhor visualização */
+  background-color: #ff6333;
+  height: 30vh;
+  letter-spacing: 0.1em;
+  font-size: 2rem;
+  line-height: 2;
+  font-weight: 200;
+  text-align: justify;
+}
+.parte1 {
+  font-size: 18px;
+}
+
+.parte1 li {
+  font-size: 20px;
+}
+.grid h2 {
+  padding-left: 23px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+/* Estilo opcional para as imagens dentro da grid */
+
+.beneficios img {
+  max-width: 100%;
+  height: 45vh;
+  padding-left: 100px;
+  position: relative;
+  bottom: 50px;
+}
+
+/*parte2*/
+
+section.parte2 {
+  background-color: #ffb400;
+  margin: 0 auto;
+  padding: 50px 90px;
+}
+
+.parte2 h1 {
+  font-size: 2.7rem;
+  text-align: center;
+}
+
+.superior {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.container1 {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: auto 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accordion_item {
+  border-radius: 5px;
+}
+
+.accordion_item:hover {
+  opacity: 0.9;
+}
+
+.accordion_header {
+  box-shadow: 8px 8px 5px #0003;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+}
+
+.accordion_content {
+  margin-left: 10px;
+  margin-right: 15px;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.5s ease;
+  font-size: 17px;
+}
+
+.active {
+  padding-bottom: 10px;
+}
+
+span,
+.icon {
+  font-weight: 600;
+  font-size: 24px;
+}
+.accordion_header span {
+  font-weight: 100;
+}
+.accordion_content li {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: sans-serif;
+  text-align: justify;
+}
+p {
+  text-align: justify;
+}
+
+.assunto2 {
+  display: flex;
+  margin: 20px 0;
+}
+.direito {
+  margin-right: 60px;
+}
+.direito .cartao {
+  height: 100vh;
+  width: 50%;
+  min-width: 600px;
+}
+
+.esquerdo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.esquerdo .cartao {
+  width: 500px;
+  height: 39vh;
+}
+
+.esquerdo .cartao:hover {
+  margin-bottom: 90px;
+  transition: 0.5s;
+}
+.cartao {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+
+.cartao .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.cartao .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+  background-color: #f88c0e;
+}
+
+.cartao .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cartao .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-weight: 100;
+}
+
+.cartao .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: #f88c0e;
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.cartao .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.cartao .back .link a {
+  color: #f3f3f3;
+}
+
+.cartao .back h3 {
+  font-size: 30px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.cartao .back p,
+ul,
+li {
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+.back li {
+  font-size: 18px;
+}
+#especial p,ul,li {
+  font-size: 18px;
+}
+.cartao:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.cartao:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+/* Estilo básico para o botão */
+.botao {
+  margin: 5px auto;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #f88c0e;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Estilo ao passar o mouse sobre o botão */
+.botao:hover {
+  background-color: #f88b0ebb;
+  color: #fff;
+  border-color: #fff;
+}
+
+section.parte3 {
+  background-color: #b29b27;
+  margin: 0 auto;
+  width: 100%;
+  padding: 50px 0px 100px opx;
+}
+.parte3 h1 {
+  font-size: 2.7rem;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.assunto3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 50px;
+  padding-bottom: 150px;
+}
+
+#section3 {
+  width: 80%;
+}
+.img3 {
+  margin-right: 100px;
+}
+
+section.parte4 {
+  margin: 0 auto;
+  background-color: #f40e0e;
+}
+
+.parte4 h1 {
+  padding: 50px;
+  margin: 0 auto;
+  background-color: #636500;
+  font-size: 2.7rem;
+  text-align: center;
+}
+/* cards*/
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #636500;
+  overflow-x: auto;
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(#be3415, #be3415);
+  transition: all 0.5s;
+  margin-right: 20px;
+}
+
+.card:hover {
+  background-image: linear-gradient(#be3415, #be3415);
+}
+
+.card .img {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-image: url("./assets/Evelynn.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+  z-index: 2;
+  position: relative;
+  opacity: 0.8;
+}
+
+.card .img span {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+  transition: all 0.5s;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.card:hover .img {
+  width: 430px;
+  opacity: 1;
+}
+
+.card:hover .img span {
+  font-size: 28px;
+}
+
+.card .content {
+  padding: 0px 20px;
+  height: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(30px);
+}
+
+.card:hover .content {
+  height: 450px;
+  padding: 20px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card .content p {
+  margin: 0;
+}
+
+.card .content .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card .content .desc {
+  font-size: 20px;
+  font-weight: 100;
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+.desc p,
+ul,
+li {
+  text-align: left;
+  line-height: 1;
+}
+
+.card .arrow {
+  padding: 15px;
+  transform: rotate(-180deg);
+  transition: all 0.5s;
+}
+
+.card:hover .arrow {
+  transform: rotate(0);
+}
+
+.card .arrow span {
+  font-size: 24px;
+}
+
+.img {
+  width: 50%;
+  /* padding-left: 50px;*/
+}
